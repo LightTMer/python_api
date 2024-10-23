@@ -59,7 +59,7 @@ def main(user_id, output_file, access_token):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Получить информацию о пользователе ВК.')
-    parser.add_argument('--user_id', type=str, default='60369', help='Идентификатор пользователя ВК (по умолчанию 1)')
+    parser.add_argument('--user_id', type=str, default='1', help='Идентификатор пользователя ВК (по умолчанию 1)')
     parser.add_argument('--output_file', type=str, default='output.json', help='Путь к файлу результата (по умолчанию output.json)')
     args = parser.parse_args()
 
