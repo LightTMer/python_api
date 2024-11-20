@@ -1,7 +1,7 @@
 import logging
 import requests
 from neo4j import GraphDatabase
-from tokene import token, uri, password, user
+from tokene import token3, uri, password, user
 
 # Настройка логгера
 logging.basicConfig(level=logging.INFO)
@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 URI = uri
 USER = user
 PASSWORD = password
-ACCESS_TOKEN = token
+ACCESS_TOKEN = token3
 
 driver = GraphDatabase.driver(URI, auth=(USER, PASSWORD))
 
