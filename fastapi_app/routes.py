@@ -1,12 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends, Query
-from fastapi.security import OAuth2PasswordBearer
-from neomodel import db, config
-from .models import User, Group
 from tokene import  uri, password, user,token3
 import logging
-import requests
 from neo4j import GraphDatabase
-from neontology import BaseNode, BaseRelationship, init_neontology
 from upload2 import create_relationship, create_group, create_user
 from fastapi import FastAPI, Depends, HTTPException, Header
 
